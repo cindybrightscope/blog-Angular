@@ -1,0 +1,25 @@
+{
+  "name": "angular-tutorial",
+  "version": "0.0.1",
+  "description": "starter project for angular",
+  "main": "index.js",
+  "scripts": {
+    "learn-angular": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "html-loader": "0.4.5",
+    "ts-loader": "2.1.0",
+    "tslint": "5.2.0",
+    "tslint-loader": "3.5.3",
+    "typescript": "2.3.3",
+    "webpack": "2.6.0",
+    "webpack-dev-server": "2.4.5"
+  },
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-animate": "1.6.4",
+    "angular-aria": "1.6.4",
+    "angular-material": "1.1.4",
+    "angular-ui-router": "^0.4.3"
+  }
+}

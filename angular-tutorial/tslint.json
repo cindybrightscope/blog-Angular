@@ -1,0 +1,14 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "arrow-parens": false,
+    "quotemark": [true, "single", "avoid-escape"],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "trailing-comma": false,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+    "max-classes-per-file": false,
+    "no-console": false,
+    "no-debugger": false
+  }
+}

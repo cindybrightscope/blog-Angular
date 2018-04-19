@@ -1,0 +1,29 @@
+<h1>Cindy's Blog</h1>
+<div layout="row">
+    <div flex-xs flex-gt-xs="50" layout="row">
+      <md-card ng-repeat="post in $ctrl.posts" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+              <span class="md-headline">
+                  <a ng-click="$ctrl.goToPost(post.pk)">{{ post.title }}</a>
+                  <span class="md-subheader">{{ post.published_date | date }}</span>
+              </span>
+              <ui-view></ui-view>
+          </md-card-title-text>
+        </md-card-title>
+      </md-card>
+    </div>
+</div>
+
+<br>
+<h3>Add New Post</h3>
+<div layout="row">
+    <form ng-submit="$ctrl.postForm()">
+        <label>Title: </label><br>
+        <input type="text" ng-model="$ctrl.postFormData.title"><br>
+        <label>Content: </label><br>
+        <input type="text" ng-model="$ctrl.postFormData.text">
+        <br><br>
+        <button type="submit">Submit Post</button>
+    </form>
+</div>

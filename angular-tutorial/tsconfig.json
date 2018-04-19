@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "allowJs": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "lib": ["ES6"],
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "node_modules/*"]
+    }
+  }
+}
